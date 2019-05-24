@@ -9,14 +9,13 @@
   "author": "",
   "license": "MIT",
   "dependencies": {
-    "@ledgerhq/hw-transport-node-hid": "^4.33.3",
-    "babel-runtime": "6.26.0",
+    "@ledgerhq/hw-transport-node-hid": "^4.60.2",
     "hw-app-iota": "^0.6.1",
-    "iota.lib.js": "^0.5.1"
+    "iota.lib.js": "^0.5.2"
   },
   "devDependencies": {
-    "@babel/core": "^7.2.2",
-    "@babel/node": "^7.2.2",
-    "@babel/preset-env": "^7.2.3"
+    "@babel/core": "^7.4.5",
+    "@babel/node": "^7.4.5",
+    "@babel/preset-env": "^7.4.5"
   }
 }
