@@ -1,5 +1,6 @@
 import '@babel/polyfill';
 
+import { listen } from '@ledgerhq/logs';
 import TransportU2F from '@ledgerhq/hw-transport-u2f';
 import TransportWebUSB from '@ledgerhq/hw-transport-webusb';
 import TransportWebBLE from '@ledgerhq/hw-transport-web-ble';
@@ -7,6 +8,11 @@ import AppIota from 'hw-app-iota';
 
 const SECURITY_LEVEL = 2;
 const TIMEOUT = 5000;
+
+// log everything to the console
+listen(e => {
+  console.log(`${e.type}: ${e.message}`);
+});
 
 async function getIotaAddress(Transport, account, page) {
   const transport = await Transport.create(TIMEOUT);
@@ -49,14 +55,13 @@ const btn = document.createElement('button');
 btn.textContent = 'Get Address';
 document.body.appendChild(btn);
 
-const errorEl = document.createElement('code');
-errorEl.style.color = '#a33';
+const outputEl = document.createElement('code');
 const pre = document.createElement('pre');
-pre.appendChild(errorEl);
+pre.appendChild(outputEl);
 document.body.appendChild(pre);
 
 btn.onclick = () => {
-  errorEl.textContent = '';
+  outputEl.textContent = '';
   getIotaAddress(
     transports[transportSelect.selectedIndex].clazz,
     accountSelect.selectedIndex,
@@ -64,11 +69,13 @@ btn.onclick = () => {
   ).then(
     a => {
       console.log(a);
-      document.write(a);
+      outputEl.style.color = '#000';
+      outputEl.textContent = a;
     },
     e => {
       console.error(e);
-      errorEl.textContent = e.message;
+      outputEl.style.color = '#a33';
+      outputEl.textContent = e.message;
     }
   );
 };
