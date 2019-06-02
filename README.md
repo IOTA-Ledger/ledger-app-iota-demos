@@ -6,7 +6,7 @@ This repository contains a few examples to demonstrate development and interacti
 
 Make sure that the IOTA app is installed on your Ledger device:
 - *Release Version:* Open the **Manager** in Ledger Live and install **IOTA** from the app catalog.
-- *Development Version:* Follow the instructions on [blue-app-iota](github.com/IOTA-Ledger/blue-app-iota).
+- *Development Version:* Follow the instructions on [blue-app-iota](https://github.com/IOTA-Ledger/blue-app-iota#development).
 
 ## Demos
 
