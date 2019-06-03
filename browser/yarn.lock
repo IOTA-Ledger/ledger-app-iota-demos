@@ -875,10 +875,10 @@
     "@ledgerhq/errors" "^4.60.0"
     events "^3.0.0"
 
-"@ledgerhq/logs@^4.60.3":
-  version "4.60.3"
-  resolved "https://registry.yarnpkg.com/@ledgerhq/logs/-/logs-4.60.3.tgz#22448add32305eb2f1f70a5c2fc061f6a118e53a"
-  integrity sha512-s5ESzmfaB8ZY8xaU627KM5RUo3gXAvTX5v5mppH8h1km4j3Tkonc+pGdHyEz341oplY4ybdZeBUHkSVuvnEGMg==
+"@ledgerhq/logs@^4.60.3", "@ledgerhq/logs@^4.61.0":
+  version "4.61.0"
+  resolved "https://registry.yarnpkg.com/@ledgerhq/logs/-/logs-4.61.0.tgz#bbcba49d7a7a4e20d6584bbfc10ed93b212c804c"
+  integrity sha512-AObEnA+tgzKEwY306i6FOT/hlc+zjF817Bty/IxG3f2wPJFRK9cJuD3Ijl4pfJP2pt7KubN4YbRGXREXhEsknQ==
 
 "@mrmlnc/readdir-enhanced@^2.2.1":
   version "2.2.1"
