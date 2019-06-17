@@ -821,19 +821,19 @@
   resolved "https://registry.yarnpkg.com/@iarna/toml/-/toml-2.2.3.tgz#f060bf6eaafae4d56a7dac618980838b0696e2ab"
   integrity sha512-FmuxfCuolpLl0AnQ2NHSzoUKWEJDFl63qXjzdoWBVyFCXzMGm1spBzk7LeHNoVCiWCF7mRVms9e6jEV9+MoPbg==
 
-"@ledgerhq/devices@^4.60.3":
-  version "4.60.3"
-  resolved "https://registry.yarnpkg.com/@ledgerhq/devices/-/devices-4.60.3.tgz#9a64d1b975878444e28047fcf71d4a14acfe6b4a"
-  integrity sha512-QCg0Kz60la4XBLj8xbASwarTQpAPTPG/cXE7+aXmwsEMqowxSlUtRF8hvbIBFn30Dt2KFsv7j3f7KPLv2HSCNA==
+"@ledgerhq/devices@^4.60.3", "@ledgerhq/devices@^4.62.0":
+  version "4.62.0"
+  resolved "https://registry.yarnpkg.com/@ledgerhq/devices/-/devices-4.62.0.tgz#1c83938a4e6853a1b8bfee4f0fa937452c127b3e"
+  integrity sha512-Z0QL23YFEF/IU6AzEcYEGICmTeCUqOiyxiIhU+AYq+XVqOrxedW/4RRYdQJG1NMi8hB2CJlMdjFMXC0ZlMiDGA==
   dependencies:
-    "@ledgerhq/errors" "^4.60.0"
-    "@ledgerhq/logs" "^4.60.3"
+    "@ledgerhq/errors" "^4.62.0"
+    "@ledgerhq/logs" "^4.62.0"
     rxjs "^6.5.2"
 
-"@ledgerhq/errors@^4.60.0":
-  version "4.60.0"
-  resolved "https://registry.yarnpkg.com/@ledgerhq/errors/-/errors-4.60.0.tgz#3c46161041823d0f70ff920a4696fd662609e40e"
-  integrity sha512-jGbDAuNw1KNB23osgK9RDa6jXNoz3QaSeaiJZjwYpCWSTH6v0vW5y5LPe9lomg5BcW2r65kNe1feLfZ4wJuu5A==
+"@ledgerhq/errors@^4.60.0", "@ledgerhq/errors@^4.62.0":
+  version "4.62.0"
+  resolved "https://registry.yarnpkg.com/@ledgerhq/errors/-/errors-4.62.0.tgz#a34dddde3131778c34f2791aceff4f511e416429"
+  integrity sha512-H1hiwZKVg6jF4VdozKAIJUfv1XPn/EBATO8Bm0PKzk+9IgcIbfsFjQmEZl6fIH/DMGWyXqQsOr1xIr0NZyQn8Q==
 
 "@ledgerhq/hw-transport-u2f@^4.60.3":
   version "4.60.3"
@@ -845,15 +845,15 @@
     "@ledgerhq/logs" "^4.60.3"
     u2f-api "0.2.7"
 
-"@ledgerhq/hw-transport-web-ble@^4.60.3":
-  version "4.60.3"
-  resolved "https://registry.yarnpkg.com/@ledgerhq/hw-transport-web-ble/-/hw-transport-web-ble-4.60.3.tgz#6679a4d4f21bffc64aab953f40412853e05772f8"
-  integrity sha512-kCMteVik+M8jC2iahi867tCGPU9FCvriKpDcY5Eb5j0GheA6bkjYow3BA4+xgNdTuocBEzJID0XH6BY6CBmdVA==
+"@ledgerhq/hw-transport-web-ble@^4.62.0":
+  version "4.62.0"
+  resolved "https://registry.yarnpkg.com/@ledgerhq/hw-transport-web-ble/-/hw-transport-web-ble-4.62.0.tgz#025fc0f38f943c5340a56ff835f1ce5b4c111892"
+  integrity sha512-H84EczWmb6O6t6uozVdEJUSPAtV+ndOOBXGPEVKBBJLkDuniL5LWQ5FtVsBsp0RhMhnDnJEfeNEG6MepN+QGLQ==
   dependencies:
-    "@ledgerhq/devices" "^4.60.3"
-    "@ledgerhq/errors" "^4.60.0"
-    "@ledgerhq/hw-transport" "^4.60.3"
-    "@ledgerhq/logs" "^4.60.3"
+    "@ledgerhq/devices" "^4.62.0"
+    "@ledgerhq/errors" "^4.62.0"
+    "@ledgerhq/hw-transport" "^4.62.0"
+    "@ledgerhq/logs" "^4.62.0"
     rxjs "^6.5.2"
 
 "@ledgerhq/hw-transport-webusb@^4.60.3":
@@ -866,19 +866,19 @@
     "@ledgerhq/hw-transport" "^4.60.3"
     "@ledgerhq/logs" "^4.60.3"
 
-"@ledgerhq/hw-transport@^4.60.3":
-  version "4.60.3"
-  resolved "https://registry.yarnpkg.com/@ledgerhq/hw-transport/-/hw-transport-4.60.3.tgz#6107d4a2687eedb0f7a3cb2f42ae2067b9e60dc7"
-  integrity sha512-X/Zl9sSVZyuPRvbdkbH9Wo22aLL6edURMwzyG9auqcGBkQoocfCqdAqG/MUc3XrnM14T9oqifJsw6Bq/nzPgaA==
+"@ledgerhq/hw-transport@^4.60.3", "@ledgerhq/hw-transport@^4.62.0":
+  version "4.62.0"
+  resolved "https://registry.yarnpkg.com/@ledgerhq/hw-transport/-/hw-transport-4.62.0.tgz#bf1de10842982d1675f318b9ba2af379d84f60ec"
+  integrity sha512-kzcB7jeYXhdVXet2V/aAzBu1yFlvnosAz9UEWzYI+sXrtY9ZgTaMSSA0QCHq7PUwwNxXbwj8M23jY6rRZh+HRA==
   dependencies:
-    "@ledgerhq/devices" "^4.60.3"
-    "@ledgerhq/errors" "^4.60.0"
+    "@ledgerhq/devices" "^4.62.0"
+    "@ledgerhq/errors" "^4.62.0"
     events "^3.0.0"
 
-"@ledgerhq/logs@^4.60.3":
-  version "4.60.3"
-  resolved "https://registry.yarnpkg.com/@ledgerhq/logs/-/logs-4.60.3.tgz#22448add32305eb2f1f70a5c2fc061f6a118e53a"
-  integrity sha512-s5ESzmfaB8ZY8xaU627KM5RUo3gXAvTX5v5mppH8h1km4j3Tkonc+pGdHyEz341oplY4ybdZeBUHkSVuvnEGMg==
+"@ledgerhq/logs@^4.60.3", "@ledgerhq/logs@^4.62.0":
+  version "4.62.0"
+  resolved "https://registry.yarnpkg.com/@ledgerhq/logs/-/logs-4.62.0.tgz#6696e6d74576e09d72bc1d7a8fcff76cd190461e"
+  integrity sha512-f/XtWHzHxE4AJlB53vZllH/4gY3t7n1vNoGkjHFfu3keLmbyHWC1sGdG+lW9FRlToSLQuVotGIbm04SBn0vSIQ==
 
 "@mrmlnc/readdir-enhanced@^2.2.1":
   version "2.2.1"
