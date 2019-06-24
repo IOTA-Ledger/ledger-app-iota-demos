@@ -9,7 +9,7 @@
   "author": "",
   "license": "MIT",
   "dependencies": {
-    "@ledgerhq/hw-transport-node-hid": "^4.60.2",
+    "@ledgerhq/hw-transport-node-hid": "^4.63.2",
     "hw-app-iota": "^0.6.1",
     "iota.lib.js": "^0.5.2"
   },
