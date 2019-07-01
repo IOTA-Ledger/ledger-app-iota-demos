@@ -821,7 +821,7 @@
   resolved "https://registry.yarnpkg.com/@iarna/toml/-/toml-2.2.3.tgz#f060bf6eaafae4d56a7dac618980838b0696e2ab"
   integrity sha512-FmuxfCuolpLl0AnQ2NHSzoUKWEJDFl63qXjzdoWBVyFCXzMGm1spBzk7LeHNoVCiWCF7mRVms9e6jEV9+MoPbg==
 
-"@ledgerhq/devices@^4.60.3", "@ledgerhq/devices@^4.63.2":
+"@ledgerhq/devices@^4.63.2":
   version "4.63.2"
   resolved "https://registry.yarnpkg.com/@ledgerhq/devices/-/devices-4.63.2.tgz#8dc650b7ff9f074d4d83858618aa4bdc0a43bc87"
   integrity sha512-91kWtrAcGoAV5zNWBDTMF3gqwMBvyZBvDnSiOJ2Top3hZvHUrwLqb6HuA87bOwPDIWBnW4BVGWswy2VnYb/ueQ==
@@ -830,7 +830,7 @@
     "@ledgerhq/logs" "^4.62.0"
     rxjs "^6.5.2"
 
-"@ledgerhq/errors@^4.60.0", "@ledgerhq/errors@^4.63.2":
+"@ledgerhq/errors@^4.63.2":
   version "4.63.2"
   resolved "https://registry.yarnpkg.com/@ledgerhq/errors/-/errors-4.63.2.tgz#c8882d5202045c801569b7816cea2b48f25b8a31"
   integrity sha512-NF4KkRQ2X1ZEmaxcCXUv0VNHaMqy/t/PXvii5IoZeNochQn56DlXcbgMzZ8HBpGQYTLdZuliT7RjKSZmUMjhrg==
@@ -845,15 +845,15 @@
     "@ledgerhq/logs" "^4.62.0"
     u2f-api "0.2.7"
 
-"@ledgerhq/hw-transport-web-ble@^4.60.3":
-  version "4.60.3"
-  resolved "https://registry.yarnpkg.com/@ledgerhq/hw-transport-web-ble/-/hw-transport-web-ble-4.60.3.tgz#6679a4d4f21bffc64aab953f40412853e05772f8"
-  integrity sha512-kCMteVik+M8jC2iahi867tCGPU9FCvriKpDcY5Eb5j0GheA6bkjYow3BA4+xgNdTuocBEzJID0XH6BY6CBmdVA==
+"@ledgerhq/hw-transport-web-ble@^4.63.2":
+  version "4.63.2"
+  resolved "https://registry.yarnpkg.com/@ledgerhq/hw-transport-web-ble/-/hw-transport-web-ble-4.63.2.tgz#8f6f7fc558a48056fd5637106ec308c8a2f93b7c"
+  integrity sha512-Bpw6ZKPc4WHvxnKpuK+9soAqthx7hd/E1KFgKmeDo7YKxNAwQYCz0WQgZ5gBfVx2huIayfJZQD36TlPUElTLww==
   dependencies:
-    "@ledgerhq/devices" "^4.60.3"
-    "@ledgerhq/errors" "^4.60.0"
-    "@ledgerhq/hw-transport" "^4.60.3"
-    "@ledgerhq/logs" "^4.60.3"
+    "@ledgerhq/devices" "^4.63.2"
+    "@ledgerhq/errors" "^4.63.2"
+    "@ledgerhq/hw-transport" "^4.63.2"
+    "@ledgerhq/logs" "^4.62.0"
     rxjs "^6.5.2"
 
 "@ledgerhq/hw-transport-webusb@^4.63.2":
@@ -866,7 +866,7 @@
     "@ledgerhq/hw-transport" "^4.63.2"
     "@ledgerhq/logs" "^4.62.0"
 
-"@ledgerhq/hw-transport@^4.60.3", "@ledgerhq/hw-transport@^4.63.2":
+"@ledgerhq/hw-transport@^4.63.2":
   version "4.63.2"
   resolved "https://registry.yarnpkg.com/@ledgerhq/hw-transport/-/hw-transport-4.63.2.tgz#1ac9d04040f42d033bf1cc398348ced1ad4c3a31"
   integrity sha512-WtejtJXyeDQe+ppiOvES2bxWaXkmHLxrwCt2cQzq2wvrH32AABE652isIxkJfUst0Q6p2QwCKO6YZN2PZiSRuQ==
