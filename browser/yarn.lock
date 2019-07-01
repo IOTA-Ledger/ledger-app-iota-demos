@@ -835,14 +835,14 @@
   resolved "https://registry.yarnpkg.com/@ledgerhq/errors/-/errors-4.63.2.tgz#c8882d5202045c801569b7816cea2b48f25b8a31"
   integrity sha512-NF4KkRQ2X1ZEmaxcCXUv0VNHaMqy/t/PXvii5IoZeNochQn56DlXcbgMzZ8HBpGQYTLdZuliT7RjKSZmUMjhrg==
 
-"@ledgerhq/hw-transport-u2f@^4.60.3":
-  version "4.60.3"
-  resolved "https://registry.yarnpkg.com/@ledgerhq/hw-transport-u2f/-/hw-transport-u2f-4.60.3.tgz#aa039bcd9326c2333a5594deed73ec0719e38d30"
-  integrity sha512-qSEdmXSueW0fCUZgx2m4Rfha+Ed+IDxSDOhHToQv5hA6V0seMI6gIl15OwiOiTtGvvfaBpEc0Vgwv1/reCnX1A==
+"@ledgerhq/hw-transport-u2f@^4.63.2":
+  version "4.63.2"
+  resolved "https://registry.yarnpkg.com/@ledgerhq/hw-transport-u2f/-/hw-transport-u2f-4.63.2.tgz#da9bcd31c0679e12f53ed999d0d143a4a877e568"
+  integrity sha512-IvsR1PBwSrmrg83gfmTXzcaFrC/txZScjbNYHEQ1JTv8cB5W+lt4Y2zwD4mrpArc7kRJvrYeJy4M2UJJQgkB3Q==
   dependencies:
-    "@ledgerhq/errors" "^4.60.0"
-    "@ledgerhq/hw-transport" "^4.60.3"
-    "@ledgerhq/logs" "^4.60.3"
+    "@ledgerhq/errors" "^4.63.2"
+    "@ledgerhq/hw-transport" "^4.63.2"
+    "@ledgerhq/logs" "^4.62.0"
     u2f-api "0.2.7"
 
 "@ledgerhq/hw-transport-web-ble@^4.60.3":
