@@ -17,7 +17,7 @@
     "@babel/polyfill": "^7.4.4",
     "@ledgerhq/hw-transport-u2f": "^4.63.2",
     "@ledgerhq/hw-transport-web-ble": "^4.63.2",
-    "@ledgerhq/hw-transport-webusb": "^4.63.2",
+    "@ledgerhq/hw-transport-webusb": "^4.64.0",
     "@ledgerhq/logs": "^4.60.3",
     "hw-app-iota": "^0.6.1"
   },
