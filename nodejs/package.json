@@ -14,7 +14,7 @@
     "iota.lib.js": "^0.5.2"
   },
   "devDependencies": {
-    "@babel/core": "^7.4.5",
+    "@babel/core": "^7.5.4",
     "@babel/node": "^7.4.5",
     "@babel/preset-env": "^7.4.5"
   }
