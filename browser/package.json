@@ -16,7 +16,7 @@
   "dependencies": {
     "@babel/polyfill": "^7.4.4",
     "@ledgerhq/hw-transport-u2f": "^4.66.0",
-    "@ledgerhq/hw-transport-web-ble": "^4.66.0",
+    "@ledgerhq/hw-transport-web-ble": "^4.68.2",
     "@ledgerhq/hw-transport-webusb": "^4.66.0",
     "@ledgerhq/logs": "^4.64.0",
     "hw-app-iota": "^0.6.1"
