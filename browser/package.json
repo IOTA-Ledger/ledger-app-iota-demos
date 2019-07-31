@@ -15,16 +15,16 @@
   "license": "MIT",
   "dependencies": {
     "@babel/polyfill": "^7.4.4",
-    "@ledgerhq/hw-transport-u2f": "^4.66.0",
-    "@ledgerhq/hw-transport-web-ble": "^4.66.0",
-    "@ledgerhq/hw-transport-webusb": "^4.66.0",
-    "@ledgerhq/logs": "^4.64.0",
+    "@ledgerhq/hw-transport-u2f": "^4.68.2",
+    "@ledgerhq/hw-transport-web-ble": "^4.68.2",
+    "@ledgerhq/hw-transport-webusb": "^4.68.2",
+    "@ledgerhq/logs": "^4.68.2",
     "hw-app-iota": "^0.6.1"
   },
   "devDependencies": {
-    "@babel/cli": "^7.5.0",
-    "@babel/core": "^7.5.4",
-    "@babel/preset-env": "^7.5.4",
+    "@babel/cli": "^7.5.5",
+    "@babel/core": "^7.5.5",
+    "@babel/preset-env": "^7.5.5",
     "gh-pages": "^2.0.1",
     "parcel-bundler": "^1.12.3",
     "prettier": "^1.18.2",
