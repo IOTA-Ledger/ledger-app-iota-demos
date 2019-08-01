@@ -1,4 +1,6 @@
-import '@babel/polyfill';
+// ledgerhq packages still require regeneratorRuntime,
+// see github.com/LedgerHQ/ledgerjs/issues/332
+import 'regenerator-runtime/runtime';
 
 import { listen } from '@ledgerhq/logs';
 import TransportU2F from '@ledgerhq/hw-transport-u2f';

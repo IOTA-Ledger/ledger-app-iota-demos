@@ -14,15 +14,14 @@
   "author": "",
   "license": "MIT",
   "dependencies": {
-    "@babel/polyfill": "^7.4.4",
     "@ledgerhq/hw-transport-u2f": "^4.68.2",
     "@ledgerhq/hw-transport-web-ble": "^4.68.2",
     "@ledgerhq/hw-transport-webusb": "^4.68.2",
     "@ledgerhq/logs": "^4.68.2",
-    "hw-app-iota": "^0.6.1"
+    "hw-app-iota": "^0.6.1",
+    "regenerator-runtime": "^0.13.3"
   },
   "devDependencies": {
-    "@babel/cli": "^7.5.5",
     "@babel/core": "^7.5.5",
     "@babel/preset-env": "^7.5.5",
     "gh-pages": "^2.0.1",
