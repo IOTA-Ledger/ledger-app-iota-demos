@@ -1,13 +1,15 @@
-// ledgerhq packages still require regeneratorRuntime,
+// @ledgerhq packages still require regeneratorRuntime
 // see github.com/LedgerHQ/ledgerjs/issues/332
 import 'regenerator-runtime/runtime';
 
 import { listen } from '@ledgerhq/logs';
 import TransportU2F from '@ledgerhq/hw-transport-u2f';
+import TransportWebAuthn from '@ledgerhq/hw-transport-webauthn';
 import TransportWebUSB from '@ledgerhq/hw-transport-webusb';
 import TransportWebBLE from '@ledgerhq/hw-transport-web-ble';
 import AppIota from 'hw-app-iota';
 
+const NUM_ACCOUNTS = 5;
 const SECURITY_LEVEL = 2;
 const TIMEOUT = 5000;
 
@@ -31,8 +33,9 @@ async function getIotaAddress(Transport, account, page) {
 }
 
 const transports = [
-  { name: 'U2F transport', clazz: TransportU2F },
-  { name: 'WebUSB transport', clazz: TransportWebUSB },
+  { name: 'U2F transport (legacy)', clazz: TransportU2F },
+  { name: 'WebAuthn transport (experimental)', clazz: TransportWebAuthn },
+  { name: 'WebUSB transport (experimental)', clazz: TransportWebUSB },
   { name: 'Web Bluetooth transport', clazz: TransportWebBLE }
 ];
 const transportSelect = document.createElement('select');
@@ -45,7 +48,7 @@ transports.forEach((t, i) => {
 document.body.appendChild(transportSelect);
 
 const accountSelect = document.createElement('select');
-for (let i = 0; i <= 3; i++) {
+for (let i = 0; i < NUM_ACCOUNTS; i++) {
   const opt = document.createElement('option');
   opt.value = i;
   opt.innerText = 'Account #' + i;

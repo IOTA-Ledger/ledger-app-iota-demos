@@ -16,6 +16,7 @@
   "dependencies": {
     "@ledgerhq/hw-transport-u2f": "^4.68.2",
     "@ledgerhq/hw-transport-web-ble": "^4.68.2",
+    "@ledgerhq/hw-transport-webauthn": "^4.68.2",
     "@ledgerhq/hw-transport-webusb": "^4.68.2",
     "@ledgerhq/logs": "^4.68.2",
     "hw-app-iota": "^0.6.1",
