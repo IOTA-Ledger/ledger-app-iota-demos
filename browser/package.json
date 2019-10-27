@@ -14,20 +14,20 @@
   "author": "",
   "license": "MIT",
   "dependencies": {
-    "@ledgerhq/hw-transport-u2f": "^4.68.2",
-    "@ledgerhq/hw-transport-web-ble": "^4.68.2",
-    "@ledgerhq/hw-transport-webauthn": "^4.68.2",
-    "@ledgerhq/hw-transport-webusb": "^4.68.2",
-    "@ledgerhq/logs": "^4.68.2",
+    "@ledgerhq/hw-transport-u2f": "^4.73.3",
+    "@ledgerhq/hw-transport-web-ble": "^4.73.3",
+    "@ledgerhq/hw-transport-webauthn": "^4.73.3",
+    "@ledgerhq/hw-transport-webusb": "^4.73.3",
+    "@ledgerhq/logs": "^4.72.0",
     "hw-app-iota": "^0.6.1",
     "regenerator-runtime": "^0.13.3"
   },
   "devDependencies": {
-    "@babel/core": "^7.5.5",
-    "@babel/preset-env": "^7.5.5",
-    "gh-pages": "^2.0.1",
-    "parcel-bundler": "^1.12.3",
+    "@babel/core": "^7.6.4",
+    "@babel/preset-env": "^7.6.3",
+    "gh-pages": "^2.1.1",
+    "parcel-bundler": "^1.12.4",
     "prettier": "^1.18.2",
-    "rimraf": "^2.6.3"
+    "rimraf": "^3.0.0"
   }
 }
