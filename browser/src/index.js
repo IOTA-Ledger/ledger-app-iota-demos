@@ -32,6 +32,16 @@ async function getIotaAddress(Transport, account, page) {
   }
 }
 
+async function getIotaAppVersion(Transport) {
+  const transport = await Transport.create(TIMEOUT);
+  try {
+    const hwapp = new AppIota(transport);
+    return await hwapp.getAppVersion();
+  } finally {
+    transport.close();
+  }
+}
+
 const transports = [
   { name: 'U2F transport (legacy)', clazz: TransportU2F },
   { name: 'WebAuthn transport (experimental)', clazz: TransportWebAuthn },
@@ -56,16 +66,20 @@ for (let i = 0; i < NUM_ACCOUNTS; i++) {
 }
 document.body.appendChild(accountSelect);
 
-const btn = document.createElement('button');
-btn.textContent = 'Get Address';
-document.body.appendChild(btn);
+const addressBtn = document.createElement('button');
+addressBtn.textContent = 'Get Address';
+document.body.appendChild(addressBtn);
+
+const versionBtn = document.createElement('button');
+versionBtn.textContent = 'Get App Version';
+document.body.appendChild(versionBtn);
 
 const outputEl = document.createElement('code');
 const pre = document.createElement('pre');
 pre.appendChild(outputEl);
 document.body.appendChild(pre);
 
-btn.onclick = () => {
+addressBtn.onclick = () => {
   outputEl.textContent = '';
   getIotaAddress(
     transports[transportSelect.selectedIndex].clazz,
@@ -76,6 +90,22 @@ btn.onclick = () => {
       console.log(a);
       outputEl.style.color = '#000';
       outputEl.textContent = a;
+    },
+    e => {
+      console.error(e);
+      outputEl.style.color = '#a33';
+      outputEl.textContent = e.message;
+    }
+  );
+};
+
+versionBtn.onclick = () => {
+  outputEl.textContent = '';
+  getIotaAppVersion(transports[transportSelect.selectedIndex].clazz).then(
+    v => {
+      console.log(v);
+      outputEl.style.color = '#000';
+      outputEl.textContent = v;
     },
     e => {
       console.error(e);
