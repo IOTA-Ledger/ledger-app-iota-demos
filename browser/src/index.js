@@ -6,6 +6,7 @@ import { listen } from '@ledgerhq/logs';
 import TransportU2F from '@ledgerhq/hw-transport-u2f';
 import TransportWebAuthn from '@ledgerhq/hw-transport-webauthn';
 import TransportWebUSB from '@ledgerhq/hw-transport-webusb';
+import TransportWebHID from '@ledgerhq/hw-transport-webhid';
 import TransportWebBLE from '@ledgerhq/hw-transport-web-ble';
 import AppIota from 'hw-app-iota';
 
@@ -45,7 +46,8 @@ async function getIotaAppVersion(Transport) {
 const transports = [
   { name: 'U2F transport (legacy)', clazz: TransportU2F },
   { name: 'WebAuthn transport (experimental)', clazz: TransportWebAuthn },
-  { name: 'WebUSB transport (experimental)', clazz: TransportWebUSB },
+  { name: 'WebUSB transport', clazz: TransportWebUSB },
+  { name: 'WebHID transport (experimental)', clazz: TransportWebHID },
   { name: 'Web Bluetooth transport', clazz: TransportWebBLE }
 ];
 const transportSelect = document.createElement('select');
