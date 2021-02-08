@@ -11,7 +11,6 @@ import TransportWebBLE from '@ledgerhq/hw-transport-web-ble';
 import AppIota from 'hw-app-iota';
 
 const NUM_ACCOUNTS = 5;
-const SECURITY_LEVEL = 2;
 const TIMEOUT = 5000;
 
 // log everything to the console
@@ -19,14 +18,13 @@ listen(e => {
   console.log(`${e.type}: ${e.message}`);
 });
 
-async function getIotaAddress(Transport, account, page) {
+async function getIotaAddress(Transport, account, index) {
   const transport = await Transport.create(TIMEOUT);
   try {
     const hwapp = new AppIota(transport);
-    const bipPath = `44'/4218'/${account}'/${page}'`;
-    await hwapp.setActiveSeed(bipPath, SECURITY_LEVEL);
-    return await hwapp.getAddress(0, {
-      checksum: true
+    const bipPath = `44'/1'/${account}'/0'/${index}'`;
+    return await hwapp.getAddress(bipPath, {
+      prefix: 'atoi'
     });
   } finally {
     transport.close();

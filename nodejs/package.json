@@ -10,15 +10,15 @@
   "author": "",
   "license": "MIT",
   "dependencies": {
-    "@ledgerhq/hw-transport-node-hid": "^5.15.0",
-    "@ledgerhq/hw-transport-node-speculos": "^5.15.3",
-    "hw-app-iota": "^0.6.1",
+    "@ledgerhq/hw-transport-node-hid": "^5.43.0",
+    "@ledgerhq/hw-transport-node-speculos": "^5.43.0",
+    "hw-app-iota": "^0.6.2",
     "iota.lib.js": "^0.5.3"
   },
   "devDependencies": {
-    "@babel/core": "^7.9.6",
-    "@babel/node": "^7.8.7",
-    "@babel/preset-env": "^7.9.6",
-    "prettier": "^2.0.5"
+    "@babel/core": "^7.12.13",
+    "@babel/node": "^7.12.13",
+    "@babel/preset-env": "^7.12.13",
+    "prettier": "^2.2.1"
   }
 }

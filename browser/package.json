@@ -14,21 +14,21 @@
   "author": "",
   "license": "MIT",
   "dependencies": {
-    "@ledgerhq/hw-transport-u2f": "^5.15.0",
-    "@ledgerhq/hw-transport-web-ble": "^5.15.0",
-    "@ledgerhq/hw-transport-webauthn": "^5.15.0",
-    "@ledgerhq/hw-transport-webhid": "^5.15.0",
-    "@ledgerhq/hw-transport-webusb": "^5.15.0",
-    "@ledgerhq/logs": "^5.15.0",
-    "hw-app-iota": "^0.6.1",
-    "regenerator-runtime": "^0.13.5"
+    "@ledgerhq/hw-transport-u2f": "^5.34.0",
+    "@ledgerhq/hw-transport-web-ble": "^5.43.0",
+    "@ledgerhq/hw-transport-webauthn": "^5.34.0",
+    "@ledgerhq/hw-transport-webhid": "^5.43.0",
+    "@ledgerhq/hw-transport-webusb": "^5.43.0",
+    "@ledgerhq/logs": "^5.43.0",
+    "hw-app-iota": "^0.6.2",
+    "regenerator-runtime": "^0.13.7"
   },
   "devDependencies": {
-    "@babel/core": "^7.9.6",
-    "@babel/preset-env": "^7.9.6",
-    "gh-pages": "^2.2.0",
+    "@babel/core": "^7.12.13",
+    "@babel/preset-env": "^7.12.13",
+    "gh-pages": "^3.1.0",
     "parcel-bundler": "^1.12.4",
-    "prettier": "^2.0.5",
+    "prettier": "^2.2.1",
     "rimraf": "^3.0.2"
   }
 }
