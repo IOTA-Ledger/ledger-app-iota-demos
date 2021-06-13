@@ -1,7 +1,9 @@
 import TransportHID from '@ledgerhq/hw-transport-node-hid';
 import TransportSpeculos from '@ledgerhq/hw-transport-node-speculos';
 import IOTALedger from 'hw-app-iota';
-// import { isBundle } from '@iota/bundle-validator';
+import { asTransactionObject } from '@iota/transaction-converter';
+import Validator from '@iota/bundle-validator';
+const isBundle = Validator.default;
 
 const USE_SPECULOS = false;
 const SPECULOS_APDU_PORT = 4000;
@@ -18,18 +20,20 @@ const KEY_INDEX = 4244444444;
 const VALUE = 10;
 const BALANCE = 2779530283277760;
 
-async function crateTransport() {
+async function createTransport() {
   if (USE_SPECULOS) {
-    return await TransportSpeculos.open({ apduPort: SPECULOS_APDU_PORT });
+    return await TransportSpeculos.default.open({
+      apduPort: SPECULOS_APDU_PORT,
+    });
   }
-  return await TransportHID.create();
+  return await TransportHID.default.create();
 }
 
 function validateBundleTrytes(bundleTrytes) {
   // convert to transaction objects to add transactions hashes to bundle
   var transactionObjects = [];
   bundleTrytes.forEach((tx) => {
-    transactionObjects.unshift(transactionObject(tx));
+    transactionObjects.unshift(asTransactionObject(tx));
   });
 
   // validates signatures and overall structure.
@@ -41,7 +45,7 @@ function validateBundleTrytes(bundleTrytes) {
 }
 
 (async () => {
-  const transport = await crateTransport();
+  const transport = await createTransport();
   const ledger = new IOTALedger(transport);
 
   console.log('App version: ' + (await ledger.getAppVersion()));
