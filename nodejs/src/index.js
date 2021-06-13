@@ -1,7 +1,7 @@
 import TransportHID from '@ledgerhq/hw-transport-node-hid';
 import TransportSpeculos from '@ledgerhq/hw-transport-node-speculos';
 import IOTALedger from 'hw-app-iota';
-import { isBundle, transactionObject } from 'iota.lib.js/lib/utils/utils';
+// import { isBundle } from '@iota/bundle-validator';
 
 const USE_SPECULOS = false;
 const SPECULOS_APDU_PORT = 4000;

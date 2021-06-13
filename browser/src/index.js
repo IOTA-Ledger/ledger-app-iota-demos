@@ -1,7 +1,3 @@
-// @ledgerhq packages still require regeneratorRuntime
-// see github.com/LedgerHQ/ledgerjs/issues/332
-import 'regenerator-runtime/runtime';
-
 import { listen } from '@ledgerhq/logs';
 import TransportU2F from '@ledgerhq/hw-transport-u2f';
 import TransportWebAuthn from '@ledgerhq/hw-transport-webauthn';
@@ -15,7 +11,7 @@ const SECURITY_LEVEL = 2;
 const TIMEOUT = 5000;
 
 // log everything to the console
-listen(e => {
+listen((e) => {
   console.log(`${e.type}: ${e.message}`);
 });
 
@@ -26,7 +22,7 @@ async function getIotaAddress(Transport, account, page) {
     const bipPath = `44'/4218'/${account}'/${page}'`;
     await hwapp.setActiveSeed(bipPath, SECURITY_LEVEL);
     return await hwapp.getAddress(0, {
-      checksum: true
+      checksum: true,
     });
   } finally {
     transport.close();
@@ -44,11 +40,11 @@ async function getIotaAppVersion(Transport) {
 }
 
 const transports = [
-  { name: 'U2F transport (legacy)', clazz: TransportU2F },
-  { name: 'WebAuthn transport (experimental)', clazz: TransportWebAuthn },
   { name: 'WebUSB transport', clazz: TransportWebUSB },
   { name: 'WebHID transport (experimental)', clazz: TransportWebHID },
-  { name: 'Web Bluetooth transport', clazz: TransportWebBLE }
+  { name: 'Web Bluetooth transport', clazz: TransportWebBLE },
+  { name: 'U2F transport (deprecated)', clazz: TransportU2F },
+  { name: 'WebAuthn transport (deprecated)', clazz: TransportWebAuthn },
 ];
 const transportSelect = document.createElement('select');
 transports.forEach((t, i) => {
@@ -88,12 +84,12 @@ addressBtn.onclick = () => {
     accountSelect.selectedIndex,
     0
   ).then(
-    a => {
+    (a) => {
       console.log(a);
       outputEl.style.color = '#000';
       outputEl.textContent = a;
     },
-    e => {
+    (e) => {
       console.error(e);
       outputEl.style.color = '#a33';
       outputEl.textContent = e.message;
@@ -104,12 +100,12 @@ addressBtn.onclick = () => {
 versionBtn.onclick = () => {
   outputEl.textContent = '';
   getIotaAppVersion(transports[transportSelect.selectedIndex].clazz).then(
-    v => {
+    (v) => {
       console.log(v);
       outputEl.style.color = '#000';
       outputEl.textContent = v;
     },
-    e => {
+    (e) => {
       console.error(e);
       outputEl.style.color = '#a33';
       outputEl.textContent = e.message;
