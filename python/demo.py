@@ -26,7 +26,6 @@ def apdu_command(ins, data, p1=0, p2=0):
     command.extend([p1, p2])  # Instruction parameters (2)
     command.append(len(b))  # length of data (1)
     command.extend(b)  # Command data
-    command.append(0)
 
     return command
 
